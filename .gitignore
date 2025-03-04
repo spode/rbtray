@@ -21,3 +21,5 @@
 *.zip
 *.FileListAbsolute.txt
 !/**/RBTray.exe
+x64/
+x86/
