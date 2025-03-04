@@ -321,13 +321,13 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE /*hPrevInstance*
     int argc;
     LPWSTR * argv = CommandLineToArgvW(GetCommandLineW(), &argc);
     bool shouldExit = false;
-    bool useHook = true;
+    bool useHook = false;
     for (int a = 0; a < argc; ++a) {
         if (!wcscmp(argv[a], L"--exit")) {
             shouldExit = true;
         }
-        if (!wcscmp(argv[a], L"--no-hook")) {
-            useHook = false;
+        if (!wcscmp(argv[a], L"--use-hook")) {
+            useHook = true;
         }
     }
 
