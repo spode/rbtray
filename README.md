@@ -1,5 +1,8 @@
-# RBTray
+# My fork changes
+- change default keybind to CTRL+ALT+B
+- disable hook by default instead of via param --no-hook, change param name to --use-hook which turns it on instead
 
+# RBTray (orig)
 RBTray is a small Windows program that runs in the background and allows windows
 to be minimized to the system tray by:
 
